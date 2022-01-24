@@ -10,7 +10,7 @@ import {
 } from "@apollo/client";
 
 export const link = createHttpLink({
-  uri: "http://1a69-190-250-208-71.ngrok.io/graphql"
+  uri: process.env.REACT_APP_API_URL
 });
 
 export const client = new ApolloClient({
